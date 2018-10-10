@@ -1,0 +1,18 @@
+<h1>counted</h1>
+<br>
+<form  action="{% url 'home' %}">
+  <input type="submit" name="" value="Home Page">
+
+</form>
+{{ data1 }}<br>
+<br>
+<h1>Total Word</h1>
+<br><br>
+total word={{ length1 }}
+<br><br>
+<h1>word Counting</h1>
+<br><br>
+{% for word2,word3 in word1 %}
+{{word2}} = {{word3}}
+<br><br>
+{% endfor %}
